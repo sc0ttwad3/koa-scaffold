@@ -1,8 +1,8 @@
 
 
-# express-scaffold
+# koa-scaffold
 
-☕️ Simple Express server, Sessions Filestore, Morgan logging, Helmet security measures and more... 
+☕️ Simple Koa server scaffolding
 
 ## Setup
 
