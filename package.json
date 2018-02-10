@@ -1,9 +1,14 @@
 {
   "name": "koa-scaffold",
   "version": "0.0.1",
-  "description": "![Logo of the project](./images/logo.sample.png) Simple Koa server scaffolding",
+  "description": "☕️ Simple Koa server scaffolding",
+  "scripts": {
+    "start": "node .",
+    "dev:server": "nodemon"
+  },
   "main": "index.js",
   "dependencies": {
+    "boom": "^7.1.1",
     "joi": "^13.1.2",
     "koa": "^2.4.1",
     "koa-joi-validate": "^0.5.1",
@@ -12,10 +17,6 @@
   "devDependencies": {
     "nodemon": "^1.14.12",
     "prettier": "^1.10.2"
-  },
-  "scripts": {
-    "start": "node .",
-    "dev:server": "nodemon"
   },
   "author": "Scott Wade <sc0ttwad3@gmail.com> (http://sc0ttwad3.com)",
   "license": "MIT"

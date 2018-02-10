@@ -1,12 +1,10 @@
-![Logo of the project](./images/logo.sample.png)
+
 
 # express-scaffold
 
-Simple Express server, Sessions Filestore, Morgan logging, Helmet security measures and more... 
+☕️ Simple Express server, Sessions Filestore, Morgan logging, Helmet security measures and more... 
 
 ## Setup
-
-Pour ☕️ then clone the repository
 
 ```
 $ npm install
