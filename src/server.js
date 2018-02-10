@@ -1,3 +1,7 @@
+// Babel: require HOOK will bind itself to node’s require
+//        and automatically compile files on the fly
+require('babel-register')
+
 const chalk = require('chalk');
 const Koa = require('koa')
 const Router = require('koa-router')
