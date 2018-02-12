@@ -13,7 +13,15 @@ const app = new Koa();
 const router = new Router();
 const port = process.env.PORT || '4000';
 
-// log each request to the console
+/* Setup middle ware functions */
+// x-response-time and logger
+app.use(async (ctx, next) => {
+  const start = Date.now();
+  await next();
+  const ms = Date.now() - start;
+  ctx.set('X-Response-Time', `${ms}ms`);
+});
+
 app.use(async (ctx, next) => {
   const start = Date.now();
   await next();
@@ -27,14 +35,16 @@ app.use(async (ctx, next) => {
   await next();
 });
 
-
+/*
 app.use(router.routes())
    .use(router.allowedMethods({
      throw: true,
      notImplemented: () => new Boom.notImplemented(),
      methodNotAllowed: () => new Boom.methodNotAllowed()
    }));
+*/
 
+// response
 app.use(ctx => {
   ctx.body = 'Hello Koa';
 });
