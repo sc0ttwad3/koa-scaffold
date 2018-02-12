@@ -14,7 +14,8 @@ const router = new Router();
 const port = process.env.PORT || '4000';
 
 /* Setup middle ware functions */
-// x-response-time and logger
+
+// x-response-time
 app.use(async (ctx, next) => {
   const start = Date.now();
   await next();
@@ -22,6 +23,7 @@ app.use(async (ctx, next) => {
   ctx.set('X-Response-Time', `${ms}ms`);
 });
 
+// log duration
 app.use(async (ctx, next) => {
   const start = Date.now();
   await next();

@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "☕️ Simple Koa server scaffolding",
   "scripts": {
-    "start": "node .",
-    "dev:server": "nodemon"
+    "start": "node --harmony .",
+    "dev:server": "nodemon --harmony"
   },
   "main": "index.js",
   "dependencies": {
