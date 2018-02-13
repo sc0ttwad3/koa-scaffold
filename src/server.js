@@ -46,6 +46,13 @@ app.use(router.routes())
    }));
 */
 
+/* Example of ASYNC middleware function
+app.use(async ctx => {
+  await User.getById(ctx.session.id);   // ctx instead of this
+  ctx.body = user;
+});
+*/
+
 // response
 app.use(ctx => {
   ctx.body = 'Hello Koa';
@@ -53,4 +60,3 @@ app.use(ctx => {
 
 // app.listen(4000);
 app.listen(port, () => console.log(chalk.bold.blue(`Koa server listening on ${port} ...`)));
-

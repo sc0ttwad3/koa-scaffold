@@ -31,6 +31,10 @@ npm test
 
 ## Documentation
 
+### Reference Materials
+
+[Koa Async Project](https://www.smashingmagazine.com/2016/08/getting-started-koa-2-async-functions)
+
 ## Note
 
 This project is still evolving to encompass further refinements and customizations.
